@@ -1,12 +1,18 @@
-import Greeting from "@/components/Greeting";
+import CounterButton from "@/components/CounterButton";
 import { View } from "react-native";
 
 export default function HomeScreen() {
-  return <View style={{ flex: 1, backgroundColor: "#fff" }}>
-    <Greeting name="Nasirdin" role="teacher"/>
+  return (
+    <View style={{ flex: 1, backgroundColor: "#fff" }}>
+      {/* <ProfileCard name="asd" course="DEV" role="Student" btnName="Press me" btnStep={1056} */}
 
+      <CounterButton title="Click Me1" step={1} initialValue={0}/>
+      <CounterButton title="Click Me2" step={2} initialValue={0}/>
+      <CounterButton title="Click Me3" step={3} initialValue={0}/>
+      <CounterButton title="Click Me4" step={4} initialValue={0}/>
 
-    <ProfileCard name="student_name" role="student_role" course="course_name" bio="student_info"/>
- 
-  </View>;
+      {/* <Greeting name="asd" role="teacher"/> */}
+
+    </View>
+  );
 }
